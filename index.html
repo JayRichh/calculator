@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="content">
+                <div class="screen">
+                    <input type="text" class="display" value="0" disabled />
+                </div>
+                <div class="row">
+                    <button
+                        class="button"
+                        onclick="calculator.addOperator('AC')"
+                    >
+                        AC
+                    </button>
+                    <button
+                        class="button"
+                        onclick="calculator.addOperator('+/-')"
+                    >
+                        +/-
+                    </button>
+                    <button
+                        class="button"
+                        onclick="calculator.addOperator('%')"
+                    >
+                        %
+                    </button>
+                    <button
+                        class="button"
+                        onclick="calculator.addOperator('/')"
+                    >
+                        /
+                    </button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="calculator.addDigit(7)">
+                        7
+                    </button>
+                    <button class="button" onclick="calculator.addDigit(8)">
+                        8
+                    </button>
+                    <button class="button" onclick="calculator.addDigit(9)">
+                        9
+                    </button>
+                    <button
+                        class="button"
+                        onclick="calculator.addOperator('*')"
+                    >
+                        *
+                    </button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="calculator.addDigit(4)">
+                        4
+                    </button>
+                    <button class="button" onclick="calculator.addDigit(5)">
+                        5
+                    </button>
+                    <button class="button" onclick="calculator.addDigit(6)">
+                        6
+                    </button>
+                    <button
+                        class="button"
+                        onclick="calculator.addOperator('-')"
+                    >
+                        -
+                    </button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="calculator.addDigit(1)">
+                        1
+                    </button>
+                    <button class="button" onclick="calculator.addDigit(2)">
+                        2
+                    </button>
+                    <button class="button" onclick="calculator.addDigit(3)">
+                        3
+                    </button>
+                    <button
+                        class="button"
+                        onclick="calculator.addOperator('+')"
+                    >
+                        +
+                    </button>
+                </div>
+                <div class="row">
+                    <button
+                        class="button zero"
+                        onclick="calculator.addDigit(0)"
+                    >
+                        0
+                    </button>
+                    <button class="button" onclick="calculator.addDecimal()">
+                        .
+                    </button>
+                    <button
+                        class="button"
+                        onclick="calculator.addOperator('=')"
+                    >
+                        =
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
