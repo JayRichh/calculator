@@ -10,7 +10,7 @@
 
 ### Features:
 
-  * Supported Operations: ##### Divide, Multiply, Subtract, Percent, Signs
+  * Supported Operations: Divide, Multiply, Subtract, Percent, Signs
   * Added number rounding function to not overflow display
   * Added Clear All button to wipe display
   * Added Decimal button
