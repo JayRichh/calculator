@@ -41,11 +41,6 @@ h2 span {
     color: #d4a373;
 }
 
-a {
-    position: absolute;
-    bottom: 15%;
-}
-
 .calculator {
     background-color: #faedcd;
     border: 6px solid rgb(1, 1, 1);
