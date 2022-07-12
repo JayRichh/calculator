@@ -4,7 +4,7 @@
 ## On-screen calculator using JavaScript, CSS & HTML.
 
 
-[Check out a live version here:](https://jayrichh.github.io/calculator/ "Calculator")
+[Check out a live version here](https://jayrichh.github.io/calculator/ "Calculator")
 
 ## Overview
 
