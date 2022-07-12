@@ -1,3 +1,4 @@
+//initialize global variables
 let displayValue = "0";
 let firstOperand = null;
 let secondOperand = null;
@@ -6,11 +7,13 @@ let secondOperator = null;
 let result = null;
 const buttons = document.querySelectorAll("button");
 
-window.addEventListener("keydown", function (e) {
-    const key = document.querySelector(`button[data-key='${e.keyCode}']`);
+//keyboard input handlers
+window.addEventListener("keydown", function (e) { //keydown event listener for keyboard input
+    const key = document.querySelector(`button[data-key='${e.keyCode}']`);  //finds button with data-key attribute equal to keyCode (need to re-do this)
     key.click();
 });
 
+//update display with current value
 function updateDisplay() {
     const display = document.querySelector(".display-value");
     display.innerText = displayValue;
@@ -19,10 +22,11 @@ function updateDisplay() {
     }
 }
 
-updateDisplay();
+updateDisplay(); 
 
+//add event listeners to buttons
 function clickButton() {
-    for (let i = 0; i < buttons.length; i++) {
+    for (let i = 0; i < buttons.length; i++) { 
         buttons[i].addEventListener("click", function () {
             if (buttons[i].classList.contains("operand")) {
                 inputOperand(buttons[i].value);
@@ -106,7 +110,7 @@ function inputEquals() {
     //hitting equals doesn't display undefined before operate()
     if (firstOperator === null) {
         displayValue = displayValue;
-    } else if (secondOperator != null) {
+    } else if (secondOperator != null) { 
         //handles final result
         secondOperand = displayValue;
         result = operate(
@@ -114,8 +118,8 @@ function inputEquals() {
             Number(secondOperand),
             secondOperator
         );
-        if (result === "lmao") {
-            displayValue = "lmao";
+        if (result === "lmao") { 
+            displayValue = "lmao"; //handles divide by zero
         } else {
             displayValue = roundAccurately(result, 15).toString();
             firstOperand = displayValue;
