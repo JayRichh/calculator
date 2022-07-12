@@ -4,111 +4,185 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Calculator</title>
+        <title>Calc Ya L8r</title>
+        <link rel="icon" href="calculatoricon.png" />
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
     </head>
     <body>
+        <h1>Calc<span id="title">ulator</span></h1>
         <div class="calculator">
             <div class="content">
-                <div class="screen">
-                    <input type="text" class="display" value="0" disabled />
+                <div class="display-value">
                 </div>
                 <div class="row">
                     <button
-                        class="button"
-                        onclick="calculator.addOperator('AC')"
+                        type="button"
+                        class="clear top"
+                        value="clear"
+                        data-key="8"
                     >
                         AC
                     </button>
                     <button
-                        class="button"
-                        onclick="calculator.addOperator('+/-')"
+                        type="button"
+                        class="sign top"
+                        value="sign"
+                        data-key="192"
                     >
-                        +/-
+                        +/ -
                     </button>
                     <button
-                        class="button"
-                        onclick="calculator.addOperator('%')"
+                        type="button"
+                        class="percent top"
+                        value="percent"
+                        data-key="80"
                     >
                         %
                     </button>
                     <button
-                        class="button"
-                        onclick="calculator.addOperator('/')"
+                        type="button"
+                        class="operator right"
+                        value="/"
+                        data-key="68"
                     >
                         /
                     </button>
                 </div>
                 <div class="row">
-                    <button class="button" onclick="calculator.addDigit(7)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="7"
+                        data-key="55"
+                    >
                         7
                     </button>
-                    <button class="button" onclick="calculator.addDigit(8)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="8"
+                        data-key="56"
+                    >
                         8
                     </button>
-                    <button class="button" onclick="calculator.addDigit(9)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="9"
+                        data-key="57"
+                    >
                         9
                     </button>
                     <button
-                        class="button"
-                        onclick="calculator.addOperator('*')"
+                        type="button"
+                        class="operator right"
+                        value="*"
+                        data-key="888"
                     >
                         *
                     </button>
                 </div>
                 <div class="row">
-                    <button class="button" onclick="calculator.addDigit(4)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="4"
+                        data-key="52"
+                    >
                         4
                     </button>
-                    <button class="button" onclick="calculator.addDigit(5)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="5"
+                        data-key="53"
+                    >
                         5
                     </button>
-                    <button class="button" onclick="calculator.addDigit(6)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="6"
+                        data-key="54"
+                    >
                         6
                     </button>
                     <button
-                        class="button"
-                        onclick="calculator.addOperator('-')"
+                        type="button"
+                        class="operator right"
+                        value="-"
+                        data-key="173"
                     >
                         -
                     </button>
                 </div>
                 <div class="row">
-                    <button class="button" onclick="calculator.addDigit(1)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="1"
+                        data-key="49"
+                    >
                         1
                     </button>
-                    <button class="button" onclick="calculator.addDigit(2)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="2"
+                        data-key="50"
+                    >
                         2
                     </button>
-                    <button class="button" onclick="calculator.addDigit(3)">
+                    <button
+                        type="button"
+                        class="operand"
+                        value="3"
+                        data-key="51"
+                    >
                         3
                     </button>
                     <button
-                        class="button"
-                        onclick="calculator.addOperator('+')"
+                        type="button"
+                        class="operator right"
+                        value="+"
+                        data-key="61"
                     >
                         +
                     </button>
                 </div>
                 <div class="row">
                     <button
-                        class="button zero"
-                        onclick="calculator.addDigit(0)"
+                        type="button"
+                        class="operand"
+                        value="0"
+                        data-key="48"
+                        id="zero"
                     >
                         0
                     </button>
-                    <button class="button" onclick="calculator.addDecimal()">
+                    <button
+                        type="button"
+                        class="decimal"
+                        value="."
+                        data-key="190"
+                    >
                         .
                     </button>
                     <button
-                        class="button"
-                        onclick="calculator.addOperator('=')"
+                        type="button"
+                        class="equals right"
+                        value="="
+                        data-key="69"
                     >
                         =
                     </button>
                 </div>
             </div>
         </div>
+        <h2>Made By <span id="credit">JayRichh</span></h2> <br>
+        <a href="https://github.com/JayRichh">
+            <img src="GitHub-Mark-32px.png" alt="github" width="32" height="32">
+        </a>
+        <script src="script.js"></script>
     </body>
 </html>
