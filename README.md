@@ -1,6 +1,7 @@
 ## On-screen calculator using JavaScript, CSS & HTML.
 
 [Check out a live version here](https://jayrichh.github.io/calculator/ "Calculator")
+
 ![calculator_github](https://user-images.githubusercontent.com/18374849/193420232-bd65c5e3-6918-4cdc-8d6e-085c88df224d.png)
 
 ## Overview
